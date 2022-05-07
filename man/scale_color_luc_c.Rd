@@ -32,23 +32,9 @@ Loyola University Chicago themed \code{ggplot2} color palettes
 \examples{
 
 if (require(ggplot2)) {
-  x <- ggplot(mtcars, aes(x = disp, y = mpg, color = mpg)) +
-    geom_point()
-  x + scale_color_luc_c(reverse = TRUE)
-  x + scale_color_luc_cd(midpoint = 20)
-  x + aes(color = factor(am)) + scale_color_luc_d()
-  x + aes(color = factor(gear)) + scale_color_luc_d()
-  x + aes(color = factor(carb)) + scale_color_luc_d()
-  x + aes(color = factor(am)) + scale_fill_luc_d()
-
-  y <- ggplot(mtcars, aes(x = cyl, fill = factor(am))) + geom_bar(position = "dodge")
-
-  ggplot(mpg, aes(y = hwy, x = reorder(model, hwy), color = displ, fill = hwy)) +
-    geom_col(position = "dodge") +
-    coord_flip() +
-    facet_wrap(~ year) +
-    scale_fill_luc_cd(midpoint = 20) +
-    scale_color_luc_c()
+  ggplot(mtcars, aes(hp, mpg, color = mpg)) +
+    geom_point(size = 4) +
+    scale_color_luc_c(reverse = TRUE)
 }
 }
 \references{

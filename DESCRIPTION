@@ -1,6 +1,6 @@
 Package: ggluc
 Title: Loyola University Chicago colors and theme
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person("Quang", "Nguyen", 
            email = "nminhquang.99@gmail.com", 
