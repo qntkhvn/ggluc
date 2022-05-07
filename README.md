@@ -27,4 +27,4 @@ ggplot(mtcars, aes(hp, mpg, color = mpg)) +
   theme_bw()
 ```
 
-![](README_files/figure-gfm/example-1.png)<!-- -->
+<img src="README_files/figure-gfm/example-1.png" style="display: block; margin: auto;" />
