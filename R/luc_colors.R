@@ -63,7 +63,7 @@ scale_fill_luc_cd <- function(reverse = FALSE, ...) {
 
 scale_color_luc_d <- function(...) {
   ggplot2::discrete_scale("colour", "luc",
-                          palette = luc_pal_categorical, ...)
+                          palette = luc_palette, ...)
 }
 
 
@@ -72,17 +72,17 @@ scale_color_luc_d <- function(...) {
 
 scale_fill_luc_d <- function(...) {
   ggplot2::discrete_scale("fill", "luc",
-                          palette = luc_pal_categorical, ...)
+                          palette = luc_palette, ...)
 }
 
 
-#' @rdname luc_pal_categorical
+#' @rdname luc_palette
 #' @param n number of colors
 #' @export
 #' @examples
-#' luc_pal_categorical(2)
+#' luc_palette(2)
 
-luc_pal_categorical <- function(n) {
+luc_palette <- function(n) {
   c(luc_colors[1], luc_colors[2], "gray60", "black", "white")[1:n]
 }
 
