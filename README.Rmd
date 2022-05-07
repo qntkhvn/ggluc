@@ -1,0 +1,32 @@
+---
+output: github_document
+---
+
+An `R` package with Loyola University Chicago `ggplot2` colors and theme.
+
+## Set up
+
+* Install
+
+```{r install, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("qntkhvn/ggluc")
+```
+
+
+* Load
+
+```{r load}
+library(ggluc)
+```
+
+* Example
+
+```{r example}
+library(ggplot2)
+ggplot(mtcars, aes(hp, mpg, color = mpg)) +
+  geom_point(size = 4) +
+  scale_color_luc_c(reverse = TRUE) +
+  theme_bw()
+```
+
