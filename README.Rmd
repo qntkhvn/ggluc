@@ -8,6 +8,8 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 <!-- badges: end -->
 
+# `ggluc`
+
 An `R` package with Loyola University Chicago `ggplot2` colors and theme.
 
 ## Set up
