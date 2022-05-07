@@ -14,5 +14,17 @@ devtools::install_github("qntkhvn/ggluc")
 * Load
 
 ``` r
-librarry(ggluc)
+library(ggluc)
 ```
+
+* Example
+
+``` r
+library(ggplot2)
+ggplot(mtcars, aes(hp, mpg, color = mpg)) +
+  geom_point(size = 4) +
+  scale_color_luc_c(reverse = TRUE) +
+  theme_bw()
+```
+
+![](fig/example.png)
