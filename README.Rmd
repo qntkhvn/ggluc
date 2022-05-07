@@ -2,6 +2,12 @@
 output: github_document
 ---
 
+<!-- badges: start -->
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+<!-- badges: end -->
+
 An `R` package with Loyola University Chicago `ggplot2` colors and theme.
 
 ## Set up
@@ -13,20 +19,33 @@ An `R` package with Loyola University Chicago `ggplot2` colors and theme.
 devtools::install_github("qntkhvn/ggluc")
 ```
 
-
 * Load
 
 ```{r load}
 library(ggluc)
 ```
 
-* Example
+## Examples
 
-```{r example, fig.height=5, fig.width=6, fig.align='center'}
+```{r ggplot2}
 library(ggplot2)
+```
+
+*   Scatterplot
+
+```{r scatterplot, fig.height=5, fig.width=6, fig.align='center'}
 ggplot(mtcars, aes(hp, mpg, color = mpg)) +
   geom_point(size = 4) +
   scale_color_luc_c(reverse = TRUE) +
+  theme_bw()
+```
+
+*   2D density plot
+
+```{r density, fig.height=5, fig.width=6, fig.align='center'}
+ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+  geom_tile() +
+  scale_fill_luc_c() +
   theme_bw()
 ```
 
