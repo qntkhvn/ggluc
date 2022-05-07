@@ -1,3 +1,5 @@
 ^ggluc\.Rproj$
 ^\.Rproj\.user$
 ^\.github$
+^README\.Rmd$
+^README_files.*$
