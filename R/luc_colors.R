@@ -1,9 +1,10 @@
 #' Loyola Chicago color palettes
 #'
 #' @param reverse reverse color order
-#' @param ... arguments passed to methods
+#' @param ... additional method arguments
 #' @references \url{https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2}
-#' @description Loyola Chicago themed \code{ggplot2} color palettes
+#' @references \url{https://www.luc.edu/umc/brandstandards/graphicidentity/colorpalette/}
+#' @description Loyola University Chicago themed \code{ggplot2} color palettes
 #' @examples
 #'
 #' if (require(ggplot2)) {
@@ -28,9 +29,6 @@
 #' @export
 #'
 
-#' @rdname scale_color_luc_c
-#' @export
-
 scale_color_luc_c <- function(reverse = FALSE, ...) {
   colors <- grDevices::colorRampPalette(colors = luc_colors)(256)
   if (reverse) {
@@ -39,7 +37,7 @@ scale_color_luc_c <- function(reverse = FALSE, ...) {
   ggplot2::scale_color_gradientn(colours = colors, ...)
 }
 
-#' @rdname scale_fill_luc_c
+#' @rdname scale_color_luc_c
 #' @export
 
 scale_fill_luc_c <- function(reverse = FALSE, ...) {
@@ -51,7 +49,7 @@ scale_fill_luc_c <- function(reverse = FALSE, ...) {
 }
 
 
-#' @rdname scale_color_luc_cd
+#' @rdname scale_color_luc_c
 #' @export
 
 scale_color_luc_cd <- function(reverse = FALSE, ...) {
@@ -62,7 +60,7 @@ scale_color_luc_cd <- function(reverse = FALSE, ...) {
   ggplot2::scale_color_gradient2(high = ends[1], low = ends[2], mid = "white", ...)
 }
 
-#' @rdname scale_fill_luc_cd
+#' @rdname scale_color_luc_c
 #' @export
 
 scale_fill_luc_cd <- function(reverse = FALSE, ...) {
@@ -74,7 +72,7 @@ scale_fill_luc_cd <- function(reverse = FALSE, ...) {
 }
 
 
-#' @rdname scale_color_luc_d
+#' @rdname scale_color_luc_c
 #' @export
 
 scale_color_luc_d <- function(...) {
@@ -83,7 +81,7 @@ scale_color_luc_d <- function(...) {
 }
 
 
-#' @rdname scale_fill_luc_d
+#' @rdname scale_color_luc_c
 #' @export
 
 scale_fill_luc_d <- function(...) {
