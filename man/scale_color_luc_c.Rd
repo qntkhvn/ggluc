@@ -3,8 +3,8 @@
 \name{scale_color_luc_c}
 \alias{scale_color_luc_c}
 \alias{scale_fill_luc_c}
-\alias{scale_color_luc_cd}
-\alias{scale_fill_luc_cd}
+\alias{scale_color_luc_b}
+\alias{scale_fill_luc_b}
 \alias{scale_color_luc_d}
 \alias{scale_fill_luc_d}
 \title{Loyola Chicago color palettes}
@@ -13,9 +13,9 @@ scale_color_luc_c(reverse = FALSE, ...)
 
 scale_fill_luc_c(reverse = FALSE, ...)
 
-scale_color_luc_cd(reverse = FALSE, ...)
+scale_color_luc_b(reverse = FALSE, ...)
 
-scale_fill_luc_cd(reverse = FALSE, ...)
+scale_fill_luc_b(reverse = FALSE, ...)
 
 scale_color_luc_d(...)
 
