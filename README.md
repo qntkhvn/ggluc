@@ -1,23 +1,23 @@
-# ggluc
 
-An `R` package with Loyola University Chicago `ggplot2` colors and theme.
+An `R` package with Loyola University Chicago `ggplot2` colors and
+theme.
 
 ## Set up
 
-* Install
+-   Install
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("qntkhvn/ggluc")
 ```
 
-* Load
+-   Load
 
 ``` r
 library(ggluc)
 ```
 
-* Example
+-   Example
 
 ``` r
 library(ggplot2)
@@ -27,4 +27,4 @@ ggplot(mtcars, aes(hp, mpg, color = mpg)) +
   theme_bw()
 ```
 
-![](fig/example.png){width=50%}
+![](README_files/figure-gfm/example-1.png)<!-- -->
