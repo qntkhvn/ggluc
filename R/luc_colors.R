@@ -79,7 +79,7 @@ scale_fill_luc_d <- function(...) {
 }
 
 
-#' @rdname luc_palette
+#' @rdname scale_color_luc_c
 #' @param n number of colors
 #' @export
 #' @examples

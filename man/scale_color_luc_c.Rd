@@ -7,6 +7,7 @@
 \alias{scale_fill_luc_b}
 \alias{scale_color_luc_d}
 \alias{scale_fill_luc_d}
+\alias{luc_palette}
 \title{Loyola Chicago color palettes}
 \usage{
 scale_color_luc_c(reverse = FALSE, ...)
@@ -20,11 +21,15 @@ scale_fill_luc_b(reverse = FALSE, ...)
 scale_color_luc_d(...)
 
 scale_fill_luc_d(...)
+
+luc_palette(n)
 }
 \arguments{
 \item{reverse}{reverse color order}
 
 \item{...}{additional method arguments}
+
+\item{n}{number of colors}
 }
 \description{
 Loyola University Chicago themed \code{ggplot2} color palettes
@@ -36,6 +41,7 @@ if (require(ggplot2)) {
     geom_point(size = 4) +
     scale_color_luc_c(reverse = TRUE)
 }
+luc_palette(2)
 }
 \references{
 \url{https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2}
